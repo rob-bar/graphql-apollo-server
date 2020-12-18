@@ -20,11 +20,6 @@ const movieSchema = new Schema({
 const Movie = mongoose.model("Movie", movieSchema);
 
 const typeDefs = gql`
-  # fragment Meta on Movie {
-  #   releaseDate: Date
-  #   rating: Int
-  # }
-
   scalar Date
 
   enum Status {
